@@ -111,7 +111,7 @@ export default {
       });
     });
 
-    const port = process.env.PORT || 1337;
+    const port = process.env.PORT || 1338;
     server.listen(port, () => {
       console.log(`[Socket.IO] Server listening on port ${port}`);
     });
