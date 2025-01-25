@@ -24,12 +24,12 @@ export default ({ env }) => {
     },
     postgres: {
       connection: {
-        connectionString: env('DATABASE_URL', 'postgresql://db_o5d2_user:YkTBn1TblM9za9hhAYYfWCz1grtLLpbQ@dpg-cua0fmlumphs73chujvg-a.oregon-postgres.render.com/db_o5d2'),
-        host: env('DATABASE_HOST', 'dpg-cua0fmlumphs73chujvg-a'),
-        port: env.int('DATABASE_PORT', 5432),
-        database: env('DATABASE_NAME', 'db_o5d2'),
-        user: env('DATABASE_USERNAME', 'db_o5d2_user'),
-        password: env('DATABASE_PASSWORD', 'YkTBn1TblM9za9hhAYYfWCz1grtLLpbQ'),
+        connectionString: env('DATABASE_URL'),
+        host: env('DATABASE_HOST'),
+        port: env.int('DATABASE_PORT'),
+        database: env('DATABASE_NAME'),
+        user: env('DATABASE_USERNAME'),
+        password: env('DATABASE_PASSWORD'),
         ssl: env.bool('DATABASE_SSL', false) && {
           key: env('DATABASE_SSL_KEY', undefined),
           cert: env('DATABASE_SSL_CERT', undefined), 
